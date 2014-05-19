@@ -20,7 +20,7 @@
       "url": "https://github.com/dpiscia/paudm_web/blob/master/LICENSE-MIT"
     }
   ],
-  "main": ".src/server",
+  "main": "index.js",
   "engines": {
     "node": ">= 0.8.0"
   },
