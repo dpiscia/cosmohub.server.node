@@ -1,0 +1,17 @@
+var config = {}
+//if postgresql use the below config scheme
+//config.job = {client : "pg" , host : "localhost", port : 5432,  user : "user_name" , password : "pwd" , name : "db_name" };
+
+//config.pau= {client : "pg" , host : "localhost", port : 5432 , user : "user_name" , password : "pwd" , name : "db_name" };
+//if sqlite use the scheme belowe
+config.job = {client : "sqlite3", name : "/absolute_path/db_name"};
+config.pau = {client : "sqlite3", name : "/absolute_path/db_name"};
+config.session_store = false;
+config.port = 3001;
+config.redis = {port :6379, host : 'localhost'};
+config.sync = false; //disabled if postgresql is used with two phases transaction or with sqlite3
+config.api_python = {}
+config.api_python.host = 'http://127.0.0.1'
+config.salt = 'salt_pass'
+config.api_python.port = 6541
+module.exports = config;
